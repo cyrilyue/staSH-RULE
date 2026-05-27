@@ -1,0 +1,624 @@
+# MiaoSS妙速 - yltcyril@163.com
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9097
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+proxies:
+  - name: "尊-柏林 | 专线"
+    type: ss
+    server: 45.131.71.89
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-香港-1线 | 专线"
+    type: ss
+    server: 103.135.34.198
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-香港-2线 | 专线"
+    type: ss
+    server: 91.110.182.2
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-香港-3线 | 专线"
+    type: ss
+    server: 91.110.182.3
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-台北-1线 | 专线"
+    type: ss
+    server: 125.227.79.124
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-東京-1线 | 专线"
+    type: ss
+    server: 59.125.73.106
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "www.bing.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-東京-2线 | 专线"
+    type: ss
+    server: 59.125.73.107
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "www.bing.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-東京-3线 | 专线"
+    type: ss
+    server: 59.125.73.108
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "www.bing.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-東京-4线 | 专线"
+    type: ss
+    server: 219.28.214.229
+    port: 8443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-首爾-1线 | 专线"
+    type: ss
+    server: 103.86.47.228
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-首爾-2线 | 专线"
+    type: ss
+    server: 118.128.151.228
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-首爾-3线 | 专线"
+    type: ss
+    server: 118.128.151.236
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-新加坡-1线 | 专线"
+    type: ss
+    server: 103.233.80.139
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "尊-新加坡-2线 | 专线"
+    type: ss
+    server: 103.233.80.140
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-2线 | 专线"
+    type: ss
+    server: 104.233.146.67
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-3线 | 专线"
+    type: ss
+    server: 104.233.146.68
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-4线 | 专线"
+    type: ss
+    server: 104.233.159.45
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-5线 | 专线"
+    type: ss
+    server: 104.233.146.66
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-6线 | 专线"
+    type: ss
+    server: 104.233.159.42
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-7线 | 专线"
+    type: ss
+    server: 104.233.159.43
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "洛杉磯-8线 | 专线"
+    type: ss
+    server: 104.233.159.44
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-香港-1线 | 专线"
+    type: ss
+    server: 103.135.34.195
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-香港-2线 | 专线"
+    type: ss
+    server: 103.135.34.196
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-香港-3线 | 专线"
+    type: ss
+    server: 103.135.34.197
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-台北-1线 | 专线"
+    type: ss
+    server: 211.75.210.154
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-東京-1线 | 专线"
+    type: ss
+    server: 60.249.12.28
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "captive.apple.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-東京-2线 | 专线"
+    type: ss
+    server: 60.249.12.29
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "captive.apple.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-首爾-2线 | 专线"
+    type: ss
+    server: 116.204.169.141
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - name: "VIP-首爾-1线 | 专线"
+    type: ss
+    server: 103.86.47.202
+    port: 443
+    cipher: aes-256-gcm
+    password: "1fb2ac552e938cd1c7f398c7df2b70df"
+    udp: false
+    plugin: shadow-tls
+    plugin-opts:
+      host: "live.bilibili.com"
+      password: "iplc_shadowtls_2025"
+      version: 2
+      client-fingerprint: chrome
+  - # yltcyril@163.com-l5r1qn1n
+    alterId: 0
+    cipher: auto
+    flow: ""
+    name: 奈飞专用美区
+    network: ws
+    port: 45038
+    server: us379.lpttvmre3388.top
+    type: vmess
+    uuid: 8214792e-02d1-47b9-8414-4e0a07e7c93f
+    ws-opts:
+      headers:
+        Host: us379.lpttvmre3388.top
+      path: /xxx
+proxy-groups:
+  - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
+    name: Netflix
+    proxies:
+      - 尊-台北-1线 | 专线
+      - 尊-東京-2线 | 专线
+      - 洛杉磯-6线 | 专线
+      - 奈飞专用美区
+    type: select
+  - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
+    name: Disney
+    proxies:
+      - 尊-台北-1线 | 专线
+      - 尊-東京-4线 | 专线
+      - 尊-首爾-2线 | 专线
+      - 洛杉磯-6线 | 专线
+    type: select
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/X.png
+    name: X
+    proxies:
+      - 尊-台北-1线 | 专线
+      - 洛杉磯-6线 | 专线
+    type: select
+  - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
+    name: YouTube
+    proxies:
+      - 尊-台北-1线 | 专线
+      - 洛杉磯-6线 | 专线
+    type: select
+  - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color.json
+    name: Safari
+    proxies:
+      - 尊-台北-1线 | 专线
+      - 洛杉磯-3线 | 专线
+    type: select
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "AutoSelect"
+      - "尊-柏林 | 专线"
+      - "尊-香港-1线 | 专线"
+      - "尊-香港-2线 | 专线"
+      - "尊-香港-3线 | 专线"
+      - "尊-台北-1线 | 专线"
+      - "尊-東京-1线 | 专线"
+      - "尊-東京-2线 | 专线"
+      - "尊-東京-3线 | 专线"
+      - "尊-東京-4线 | 专线"
+      - "尊-首爾-1线 | 专线"
+      - "尊-首爾-2线 | 专线"
+      - "尊-首爾-3线 | 专线"
+      - "尊-新加坡-1线 | 专线"
+      - "尊-新加坡-2线 | 专线"
+      - "洛杉磯-2线 | 专线"
+      - "洛杉磯-3线 | 专线"
+      - "洛杉磯-4线 | 专线"
+      - "洛杉磯-5线 | 专线"
+      - "洛杉磯-6线 | 专线"
+      - "洛杉磯-7线 | 专线"
+      - "洛杉磯-8线 | 专线"
+      - "VIP-香港-1线 | 专线"
+      - "VIP-香港-2线 | 专线"
+      - "VIP-香港-3线 | 专线"
+      - "VIP-台北-1线 | 专线"
+      - "VIP-東京-1线 | 专线"
+      - "VIP-東京-2线 | 专线"
+      - "VIP-首爾-2线 | 专线"
+      - "VIP-首爾-1线 | 专线"
+      - "DIRECT"
+  - name: "AutoSelect"
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    tolerance: 200
+    timeout: 5000
+    proxies:
+      - "尊-柏林 | 专线"
+      - "尊-香港-1线 | 专线"
+      - "尊-香港-2线 | 专线"
+      - "尊-香港-3线 | 专线"
+      - "尊-台北-1线 | 专线"
+      - "尊-東京-1线 | 专线"
+      - "尊-東京-2线 | 专线"
+      - "尊-東京-3线 | 专线"
+      - "尊-東京-4线 | 专线"
+      - "尊-首爾-1线 | 专线"
+      - "尊-首爾-2线 | 专线"
+      - "尊-首爾-3线 | 专线"
+      - "尊-新加坡-1线 | 专线"
+      - "尊-新加坡-2线 | 专线"
+      - "洛杉磯-2线 | 专线"
+      - "洛杉磯-3线 | 专线"
+      - "洛杉磯-4线 | 专线"
+      - "洛杉磯-5线 | 专线"
+      - "洛杉磯-6线 | 专线"
+      - "洛杉磯-7线 | 专线"
+      - "洛杉磯-8线 | 专线"
+      - "VIP-香港-1线 | 专线"
+      - "VIP-香港-2线 | 专线"
+      - "VIP-香港-3线 | 专线"
+      - "VIP-台北-1线 | 专线"
+      - "VIP-東京-1线 | 专线"
+      - "VIP-東京-2线 | 专线"
+      - "VIP-首爾-2线 | 专线"
+      - "VIP-首爾-1线 | 专线"
+rule-providers:
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s02.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s03.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s04.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s05.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s06.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s07.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s08.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://ms.st/my/res/s09.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ms.st/my/res/s10.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ms.st/my/res/s11.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ms.st/my/res/s12.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: "https://ms.st/my/res/s13.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+rules:
+  - PROCESS-NAME,Safari,Safari
+  - DOMAIN-SUFFIX,push.apple.com,DIRECT
+  - DOMAIN-SUFFIX,appletv.com,DIRECT
+  - DOMAIN-SUFFIX,tv.apple.com,DIRECT
+  - DOMAIN-SUFFIX,music.apple.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - PROCESS-NAME,douyin,DIRECT
+  - PROCESS-NAME,WeChat,DIRECT
+  - GEOSITE,youtube,YouTube
+  - GEOSITE,twitter,X
+  - GEOSITE,netflix,Netflix
+  - DOMAIN-SUFFIX,leeyss.cn,DIRECT
+  - DOMAIN-SUFFIX,sailapay.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,Proxy
+  - RULE-SET,gfw,Proxy
+  - RULE-SET,tld-not-cn,Proxy
+  - RULE-SET,proxy,Proxy
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,Proxy
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
