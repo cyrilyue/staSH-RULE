@@ -1,0 +1,37 @@
+rules:
+  # 🍎 Apple 服务（直连）
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,appletv.com,DIRECT
+  - DOMAIN-SUFFIX,tv.apple.com,DIRECT
+  - DOMAIN-SUFFIX,music.apple.com,DIRECT
+
+  # 🇨🇳 国内 App（直连）
+  - PROCESS-NAME,WeChat,DIRECT
+  - PROCESS-NAME,douyin,DIRECT
+  - DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+  - DOMAIN-SUFFIX,alipay.com,DIRECT
+  - DOMAIN-SUFFIX,qq.com,DIRECT
+
+  # 🎬 流媒体（代理）
+  - DOMAIN-SUFFIX,netflix.com,PROXY
+  - DOMAIN-SUFFIX,nflxvideo.net,PROXY
+  - DOMAIN-SUFFIX,disneyplus.com,PROXY
+  - DOMAIN-SUFFIX,disney.com,PROXY
+  - DOMAIN-SUFFIX,youtube.com,PROXY
+
+  # 🐦 社交媒体（代理）
+  - DOMAIN-SUFFIX,twitter.com,PROXY
+  - DOMAIN-SUFFIX,x.com,PROXY
+
+  # 🌐 Google / OpenAI（代理）
+  - DOMAIN-SUFFIX,google.com,PROXY
+  - DOMAIN-SUFFIX,openai.com,PROXY
+
+  # 🌏 国内 IP 直连
+  - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT
+
+  # 🌍 兜底规则
+  - MATCH,PROXY
