@@ -1,8 +1,0 @@
-rule:
-  - DOMAIN-SUFFIX,netflix.com,PROXY
-  - DOMAIN-SUFFIX,disneyplus.com,PROXY
-  - DOMAIN-SUFFIX,x.com,PROXY
-  - DOMAIN-SUFFIX,wechat.com,DIRECT
-  - DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
